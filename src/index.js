@@ -1,5 +1,5 @@
 import './css/styles.css';
-import { BASE_URL, getPhoto, itemPerPage } from './api/webApi';
+import { BASE_URL, getPhoto, itemPerPage } from './ApiWep';
 import Notiflix from 'notiflix';
 
 const galleryEl = document.querySelector('.gallery');
