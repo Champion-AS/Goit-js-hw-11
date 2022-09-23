@@ -114,3 +114,4 @@ function createGalleryMarkup(cardsArr) {
 function clearMarkup(element) {
   element.innerHTML = '';
 }
+
