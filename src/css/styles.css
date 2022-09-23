@@ -1,24 +1,25 @@
 body {
-  background: #f7fffd;
+  background: #ffffff;
   margin: 0;
   padding: 0;
 }
 
 button {
-  background: #f7fffd;
+  background-color: rgba(44, 44, 253, 0.692);
   height: 30px;
-  border: 1px solid #15644c;
+  border: 1px solid transparent;
   border-radius: 5px;
   margin: 0;
   padding: 0 5px;
 }
 
 .header {
-  background: #0c8561;
+  background-color: rgba(33, 255, 118, 0.646);
   width: 100%;
   height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  
   align-items: center;
 }
 
@@ -30,11 +31,11 @@ button {
 
 .form__input {
   position: relative;
-  background: #f7fffd;
-  padding: 0;
+  background: #ffffff;
+  padding: 5px;
   height: 25px;
   width: 250px;
-  border: 1px solid #15644c;
+  border: 1px solid #000000;
   border-radius: 5px;
 }
 
@@ -65,9 +66,53 @@ button {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.info {
+  display: flex;
+}
+
+.info-item {
+  font-family: inherit;
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.photo-card {
+  border-radius: 4px;
+  background-color: #21ff76a5;
+  width: 300px;
+  text-align: center;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+}
+
+img {
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  object-fit: cover;
+}
+
+.gallery {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.load-more {
+  height: 40px;
+  width: 120px;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  background-color: #2c2cfdb0;
 }
