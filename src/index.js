@@ -18,9 +18,7 @@ formEl.addEventListener('submit', onSubmit);
 async function loadMoreCards(searchValue) {
   page += 1;
   const data = await getPhoto(searchValue, page);
-  // data.hits.forEach(photo => {
-  //   createCardMarkup(photo);
-  // });
+  
 
   createGalleryMarkup(data.hits);
   if (page === totalPages) {
@@ -63,7 +61,6 @@ async function mountData(searchValue) {
   }
   
 }
-
 
 
 function doLightbox() {
