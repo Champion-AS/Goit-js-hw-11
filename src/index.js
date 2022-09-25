@@ -27,6 +27,16 @@ async function loadMoreCards(searchValue) {
   doLightbox();
 }
 
+// window.addEventListener('scroll', () => {
+//   const documentRect = document.documentElement.getBoundingClientRect();
+//   // console.log(documentRect.bottom)
+//   if (documentRect.bottom <= document.documentElement.clientHeight + 150) {
+//     page ++;
+//     getPhoto(searchValue, page);
+//   }
+//   doLightbox();
+// })
+
 function onSubmit(event) {
   event.preventDefault();
 
