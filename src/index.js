@@ -1,5 +1,5 @@
 import './css/styles.css';
-import { BASE_URL, getPhoto, itemPerPage } from './ApiWep';
+import { getPhoto} from './ApiWep';
 import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
@@ -8,7 +8,7 @@ const galleryEl = document.querySelector('.gallery');
 const formEl = document.querySelector('#search-form');
 const moreBtn = document.querySelector('.load-more');
 let page = 1;
-const itemPerPage = 40;
+// const itemPerPage = 40;
 let searchValue = '';
 
  let lightbox = new SimpleLightbox('.photo-card a', {
