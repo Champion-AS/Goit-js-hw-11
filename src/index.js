@@ -67,7 +67,7 @@ async function mountData(searchValue) {
     createGalleryMarkup(data.hits);
     doLightbox();
   } catch (error) {
-    console.log('error', error);
+    Notiflix.Notify.failure(error.message);
   }
   
 }
